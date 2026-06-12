@@ -1,6 +1,8 @@
 # A U-Net Architecture for Building Segmentation Through Very High Resolution Cosmo-Skymed Imagery
 The paper was published at IGARSS 2024. See: [Paper on IEEE](https://ieeexplore.ieee.org/abstract/document/10641191).
 
+<img width="712" height="621" alt="reult (1)" src="https://github.com/user-attachments/assets/e7f8dc48-cf19-4cf0-8471-7897b25e8c7d" />
+
 ## Citation
 Please cite using: 
 ```
