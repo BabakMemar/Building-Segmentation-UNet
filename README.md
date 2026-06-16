@@ -3,6 +3,9 @@ The paper was published at IGARSS 2024. See: [Paper on IEEE](https://ieeexplore.
 
 <img width="712" height="621" alt="reult (1)" src="https://github.com/user-attachments/assets/e7f8dc48-cf19-4cf0-8471-7897b25e8c7d" />
 
+## Abstract
+Segmentation of buildings in urban areas is crucial in many applications such as urban planning, disaster response, and population mapping. The size and resolution of satellite images as well as the density of urban areas add challenges to building segmentation. This study proposes using a U-Net architecture as a Deep Learning (DL) approach to segment buildings in urban areas using Very High Resolution (VHR) COSMO-SkyMed images which represents a true novelty with respect to the state of the art (SOTA). A GitHub page has been created to make available code and dataset. The outcomes of the proposed method are very promising and future works will be also discussed in the end.
+
 ## Citation
 Please cite using: 
 ```
