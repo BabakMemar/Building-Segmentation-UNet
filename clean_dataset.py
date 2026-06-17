@@ -2,7 +2,7 @@ import rasterio
 import os
 import glob
 
-
+COVERAGE = 0.1 # Find suitable data, find the footprints that cover at least 10% of area and its corresponding image patch
 # Image patches path
 image_path = glob.glob("/Your_Path/*.tif") # Insert the directory path of image patches 
 image_path.sort()
@@ -24,18 +24,16 @@ for i in range(len(image_path)):
 
     print("Image and mask # {} is in process.".format(i))
 
-    # Find suitable data, find the footprints that cover at least 10% of area and its corresponding image patch
-    if np.mean(mask_data) > 0.1:
+    if np.mean(mask_data) > COVERAGE:
+        
         # Save the image
         output_dir = "Output_Path" # Insert the directory path of output
         output_path = os.path.join(output_dir, f"tile_{i}.tif") 
-        # print(output_path)
         with rasterio.open(output_path, 'w', **image_meta) as dst:
             dst.write(image_data, 1)
 
         # Save the mask
         output_dir = "Output_Path" # Insert the directory path of output
         output_path = os.path.join(output_dir, f"tile_{i}.tif")
-        # print(output_path)
         with rasterio.open(output_path, 'w', **mask_meta) as dst:
             dst.write(mask_data, 1)
