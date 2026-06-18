@@ -1,6 +1,9 @@
 import rasterio
 import os
 import glob
+'''
+Clean data and keep the patches over the coverage threshold.
+'''
 
 COVERAGE = 0.1 # Find suitable data, find the footprints that cover at least 10% of area and its corresponding image patch
 # Image patches path
