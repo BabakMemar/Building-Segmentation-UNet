@@ -8,7 +8,7 @@ from keras.utils import normalize
 from sklearn.model_selection import train_test_split
 from unet_model import unet_model
 
-SIZE = 128
+SIZE = 128 # Patch size
 
 # Load data paths
 image_directory = "/Your_Path/"
